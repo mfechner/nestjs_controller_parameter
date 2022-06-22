@@ -7,7 +7,7 @@ export class AppController {
 
   @Get('hello')
   getHello(@Param('language') language): string {
-    console.log('Called with language: ' + language);
+    console.log('Hello called with language: ' + language);
     return this.appService.getHello();
   }
 }
